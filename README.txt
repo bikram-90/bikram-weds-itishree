@@ -1,53 +1,133 @@
-BIKRAM & ITISHREE — GITHUB PAGES DEPLOYMENT
-Release prepared: 03 November 2026
+# Bikram & Itishree — Wedding Website
 
-FILES
-- index.html: website entry point (keep at repository root)
-- .nojekyll: prevents GitHub Pages from filtering asset paths
-- assets/: local artwork, logos, and Odia decorative motifs
+**Wedding date:** 13 December 2026  
+**Location:** Bhubaneswar, Odisha, India  
+**Website:** https://bikram-90.github.io/bikram-weds-itishree/  
+**Repository:** https://github.com/bikram-90/bikram-weds-itishree
 
-MANUAL DEPLOYMENT
-1. Extract this ZIP.
-2. Open https://github.com/bikram-90/bikram-weds-itishree
-3. Confirm the main branch is selected.
-4. Choose Add file > Upload files.
-5. Upload the CONTENTS of this extracted folder (index.html, .nojekyll, README.txt, and assets/).
-6. Commit directly to main.
-7. In Settings > Pages, confirm Deploy from a branch / main / (root).
-8. Check Actions for the Pages deployment, then visit:
-   https://bikram-90.github.io/bikram-weds-itishree/
+A bilingual wedding invitation website for Bikram and Itishree, hosted with GitHub Pages.
 
-RSVP EMAIL DELIVERY
-The RSVP form opens a WhatsApp message and submits the same message to the email endpoint using FormSubmit's AJAX service.
-The first live submission may trigger a one-time activation email. Open the destination mailbox and confirm the FormSubmit request. Submissions are held until that address is confirmed.
+## Latest release — 3 November 2026
 
-IMPORTANT PRIVACY NOTE
-The current recipient address in index.html is bikramwedsitishree@yopmail.com, preserved from the existing website configuration. YOPmail states that inboxes are public and password-free; anyone who knows the inbox name can read messages. Do NOT use this inbox for guest information you expect to remain private. Before launch, replace RSVP_EMAIL in index.html with a private mailbox that you control, then make the first test submission and confirm FormSubmit at that private mailbox.
+- A language-selection screen is shown on every fresh open and page refresh. Guests choose English or Odia; the choice is not persisted between page loads.
+- English transliteration updated from **“Shubha Bibaha”** to **“Subha Vivaha”**.
+- Background soundtrack uses a single speaker control; it starts muted where browser autoplay policies allow and guests can tap to unmute.
+- Scratch-card foil resets on page reload.
+- Travel & Connectivity appears immediately after Venues.
+- GoatCounter visitor-count integration includes a fallback status if the service is blocked or unavailable.
+- Existing couple hero artwork and event assets are retained.
 
-VISITOR COUNTER (GOATCOUNTER)
-The page uses:
-- Tracking endpoint: https://bikramwedsitishree.goatcounter.com/count
-- Script: https://gc.zgo.at/count.js
-- Public counter path: TOTAL (GoatCounter's documented site-wide total)
+## Repository contents
 
-In GoatCounter Settings:
-1. Set “Your site” to https://bikram-90.github.io/bikram-weds-itishree/
-2. Keep “Allow adding visitor counts on your website” checked.
-3. “Dashboard viewable by” controls dashboard privacy; it does not prevent the public counter from displaying.
-4. “Individual pageviews” can remain unchecked; GoatCounter says this does not disable aggregate analytics.
+- `index.html` — website entry point. Keep this file in the repository root.
+- `.nojekyll` — prevents GitHub Pages/Jekyll from filtering site assets.
+- `assets/` — local artwork, logos, event illustrations, and decorative motifs.
+- `README.md` — this project and deployment guide.
+- `README.txt`, `SETUP.txt`, `TRAVEL_INFO.txt`, `DEPLOYMENT_QA.txt` — supplementary project notes.
 
-If the footer says “Check ad-blocker” or “Temporarily unavailable”, test in a private/incognito window with extensions disabled. Privacy/ad-blocking extensions may block gc.zgo.at or the GoatCounter domain. GoatCounter also caches public counter responses for up to four hours, so the displayed total may not update immediately.
+## Deploy to GitHub Pages
 
-MUSIC
-The soundtrack starts muted where the browser permits muted autoplay. The single speaker icon at the bottom-right toggles mute/unmute. Browsers do not permit a website to force audible autoplay before user interaction.
+1. Download and extract the latest deployment ZIP.
+2. Open the GitHub repository: https://github.com/bikram-90/bikram-weds-itishree
+3. Select the `main` branch.
+4. Choose **Add file → Upload files**.
+5. Upload the *contents* of the extracted ZIP to the repository root. Do not upload the ZIP file itself and do not create an extra enclosing folder.
+6. Confirm that `index.html`, `.nojekyll`, and `assets/` appear at the root, then commit the changes to `main`.
+7. In **Settings → Pages**, confirm GitHub Pages is configured to deploy from `main` and the `/(root)` folder.
+8. Open the **Actions** tab and wait for the Pages deployment to complete.
+9. Visit https://bikram-90.github.io/bikram-weds-itishree/ and hard-refresh the page if an older cached version appears.
 
-CHECKLIST AFTER DEPLOYMENT
-- Check all four event images on desktop and mobile.
-- Switch to Odia and confirm every section, button, form field, option, and helper message changes.
-- Submit one RSVP test and verify both WhatsApp draft and email receipt.
-- Confirm the GoatCounter visit total is visible after its setup is complete.
-- Confirm Maps and Google Calendar links open the intended venues/events.
+## RSVP email configuration — action required before launch
 
-LATEST UPDATE — 3 NOVEMBER 2026
-- A language selection screen now appears whenever the website is opened or refreshed. Visitors choose English or Odia each time; the choice is not remembered between page loads.
-- The English transliteration has been updated from “Shubha Bibaha” to “Subha Vivaha”.
+The RSVP form opens a WhatsApp message and also submits the message through FormSubmit's AJAX service. The current recipient configured in `index.html` is `bikramwedsitishree@yopmail.com`.
+
+**Privacy warning:** YOPmail inboxes are public and password-free. Anyone who knows the inbox name may be able to read messages. Do not use this address for private guest information. Before sharing the site widely, replace the configured RSVP email address in `index.html` with a private mailbox you control.
+
+After changing the address:
+
+1. Deploy the updated `index.html`.
+2. Submit one test RSVP.
+3. Open the destination mailbox and complete FormSubmit's one-time activation/confirmation if requested.
+4. Verify that the test submission arrives and that the WhatsApp draft opens correctly.
+
+## Visitor counter — GoatCounter
+
+The website uses:
+
+- Counter endpoint: `https://bikramwedsitishree.goatcounter.com/count`
+- Script: `https://gc.zgo.at/count.js`
+- Site-wide public counter path: `TOTAL` (a supported GoatCounter special path).
+
+Recommended settings and checks:
+
+1. In GoatCounter, set **Your site** to `https://bikram-90.github.io/bikram-weds-itishree/`.
+2. Keep **Allow adding visitor counts on your website** enabled.
+3. **Dashboard viewable by** controls dashboard privacy; it does not determine whether the public counter can be embedded.
+4. **Individual pageviews** may remain disabled if only aggregate totals are needed.
+5. If the website reports that the counter is blocked or unavailable, test in a private/incognito window with browser extensions disabled. Privacy tools and ad blockers may block `gc.zgo.at` or the GoatCounter domain.
+6. Public counter responses may be cached, so a new visit may not appear immediately.
+
+The visitor counter depends on the external GoatCounter service and the visitor's browser/network settings. A missing count does not necessarily mean the website itself failed to load.
+
+## Music and browser behaviour
+
+The soundtrack is controlled by one speaker icon near the bottom-right of the page. The site starts playback muted where the browser allows muted autoplay. A guest must interact with the speaker control to enable audible playback; browsers do not allow websites to force sound on automatically before user interaction.
+
+## Post-deployment QA checklist
+
+- [ ] Open the website in a new tab and confirm the language-selection screen appears.
+- [ ] Refresh the page and confirm language selection appears again.
+- [ ] Select English and Odia; check headings, event details, navigation, buttons, RSVP labels, and helper text.
+- [ ] Confirm “Subha Vivaha” appears in the intended English wording.
+- [ ] Confirm event artwork and the couple hero image load on desktop and mobile.
+- [ ] Confirm the speaker icon toggles mute/unmute and no floating YouTube player is visible.
+- [ ] Scratch the card, refresh, and confirm the foil resets.
+- [ ] Confirm the section order is Venues → Travel & Connectivity → RSVP.
+- [ ] Test Google Maps and Google Calendar links for each event.
+- [ ] Test the RSVP WhatsApp draft and email delivery after configuring a private recipient and activating FormSubmit.
+- [ ] Verify the GoatCounter total with extensions disabled if the counter is not visible.
+
+## Event schedule
+
+| Event | Date and time | Venue |
+|---|---|---|
+| Mehendi — The Green Gala | 12 December 2026, 6:00 PM onwards | K-4/10, Kalinga Vihar, Bhubaneswar |
+| Haldi — The Yellow Affair | 13 December 2026, 10:00 AM onwards | K-4/10, Kalinga Vihar, Bhubaneswar |
+| Wedding — Petals & Promises | 13 December 2026, 7:30 PM onwards | The Regal Palm, Cuttack–Puri Bypass Road, Bhubaneswar |
+| Reception — The Afterglow | 20 December 2026, 7:00 PM onwards | DM Convention, Aiginia, Bhubaneswar |
+
+---
+
+For deployment, always use the latest version of the deployment ZIP and upload its extracted contents to the repository root.
+
+
+## Latest update — Odisha Explorer and Pattachitra hero (3 November 2026)
+
+The latest release uses the confirmed Option 2 Pattachitra-inspired couple artwork in the hero. The portrait has a transparent outer background so it sits naturally within the existing cream-and-gold arch.
+
+### Interactive Odisha Explorer
+
+The `#odishaExplorer` section is linked from the main navigation and includes:
+
+- **Konark-inspired celebration wheel:** clickable milestones for Mehendi (12 Dec), Haldi (13 Dec morning), Wedding (13 Dec evening), and Reception (20 Dec).
+- **Interactive Odisha art gallery:** Pattachitra, Cuttack Tarakasi, Pipili appliqué, Sambalpuri Ikat/Bandha, Jhoti & Chita, and Odissi.
+- **Odia phrase explorer:** Namaskar, Āpaṇa kemiti achhanti, Dhanyabād, and Śubha bibāha, with meanings and pronunciation guidance.
+- **Five-clue treasure hunt:** hidden clickable motifs across the hero, invitation, story, events, and venues. Clue progress is saved in the visitor's browser using localStorage.
+- **Secret couple message:** enter `SUBHA2026` or `SUBHAVIVAHA2026` to reveal a personal note inspired by the couple's coffee-to-chai first meeting.
+
+The separate family-parentage section has been removed; the Behera family assistance/contact cards remain. The visible website-visit counter is not shown; GoatCounter analytics remains enabled in the background. The floating music and scroll-to-top controls remain available.
+
+### Deployment
+
+1. Download and extract the latest deployment ZIP.
+2. Upload the **contents** of the extracted folder to the root of `bikram-90/bikram-weds-itishree` on the `main` branch, replacing existing files when prompted.
+3. Ensure `index.html`, `.nojekyll`, `README.md`, and the complete `assets/` folder are at repository root.
+4. Allow GitHub Pages a few minutes to publish, then hard-refresh the live page.
+5. Test the language chooser, Odisha Explorer navigation, five hidden clues, gallery cards, wheel milestones, phrase cards, secret code, RSVP, music toggle, and scroll-to-top on desktop and mobile.
+
+### Visitor privacy and local behaviour
+
+- The language chooser appears on every fresh page load/refresh; the language choice is not persisted.
+- Treasure-hunt progress is stored locally in the visitor's browser. It is not sent to the website owner.
+- The secret code is a playful client-side easter egg, not a security feature.
+- Muted autoplay may be permitted by a browser, but audible playback requires a visitor interaction.

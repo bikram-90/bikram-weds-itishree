@@ -73,6 +73,20 @@ The visitor counter depends on the external GoatCounter service and the visitor'
 
 The soundtrack is controlled by one speaker icon near the bottom-right of the page. The site starts playback muted where the browser allows muted autoplay. A guest must interact with the speaker control to enable audible playback; browsers do not allow websites to force sound on automatically before user interaction.
 
+## Post-deployment QA checklist
+
+- [ ] Open the website in a new tab and confirm the language-selection screen appears.
+- [ ] Refresh the page and confirm language selection appears again.
+- [ ] Select English and Odia; check headings, event details, navigation, buttons, RSVP labels, and helper text.
+- [ ] Confirm “Subha Vivaha” appears in the intended English wording.
+- [ ] Confirm event artwork and the couple hero image load on desktop and mobile.
+- [ ] Confirm the speaker icon toggles mute/unmute and no floating YouTube player is visible.
+- [ ] Scratch the card, refresh, and confirm the foil resets.
+- [ ] Confirm the section order is Venues → Travel & Connectivity → RSVP.
+- [ ] Test Google Maps and Google Calendar links for each event.
+- [ ] Test the RSVP WhatsApp draft and email delivery after configuring a private recipient and activating FormSubmit.
+- [ ] Verify the GoatCounter total with extensions disabled if the counter is not visible.
+
 ## Event schedule
 
 | Event | Date and time | Venue |
@@ -85,3 +99,35 @@ The soundtrack is controlled by one speaker icon near the bottom-right of the pa
 ---
 
 For deployment, always use the latest version of the deployment ZIP and upload its extracted contents to the repository root.
+
+
+## Latest update — Odisha Explorer and Pattachitra hero (3 November 2026)
+
+The latest release uses the confirmed Option 2 Pattachitra-inspired couple artwork in the hero. The portrait has a transparent outer background so it sits naturally within the existing cream-and-gold arch.
+
+### Interactive Odisha Explorer
+
+The `#odishaExplorer` section is linked from the main navigation and includes:
+
+- **Konark-inspired celebration wheel:** clickable milestones for Mehendi (12 Dec), Haldi (13 Dec morning), Wedding (13 Dec evening), and Reception (20 Dec).
+- **Interactive Odisha art gallery:** Pattachitra, Cuttack Tarakasi, Pipili appliqué, Sambalpuri Ikat/Bandha, Jhoti & Chita, and Odissi.
+- **Odia phrase explorer:** Namaskar, Āpaṇa kemiti achhanti, Dhanyabād, and Śubha bibāha, with meanings and pronunciation guidance.
+- **Five-clue treasure hunt:** hidden clickable motifs across the hero, invitation, story, events, and venues. Clue progress is saved in the visitor's browser using localStorage.
+- **Secret couple message:** enter `SUBHA2026` or `SUBHAVIVAHA2026` to reveal a personal note inspired by the couple's coffee-to-chai first meeting.
+
+The separate family-parentage section has been removed; the Behera family assistance/contact cards remain. The visible website-visit counter is not shown; GoatCounter analytics remains enabled in the background. The floating music and scroll-to-top controls remain available.
+
+### Deployment
+
+1. Download and extract the latest deployment ZIP.
+2. Upload the **contents** of the extracted folder to the root of `bikram-90/bikram-weds-itishree` on the `main` branch, replacing existing files when prompted.
+3. Ensure `index.html`, `.nojekyll`, `README.md`, and the complete `assets/` folder are at repository root.
+4. Allow GitHub Pages a few minutes to publish, then hard-refresh the live page.
+5. Test the language chooser, Odisha Explorer navigation, five hidden clues, gallery cards, wheel milestones, phrase cards, secret code, RSVP, music toggle, and scroll-to-top on desktop and mobile.
+
+### Visitor privacy and local behaviour
+
+- The language chooser appears on every fresh page load/refresh; the language choice is not persisted.
+- Treasure-hunt progress is stored locally in the visitor's browser. It is not sent to the website owner.
+- The secret code is a playful client-side easter egg, not a security feature.
+- Muted autoplay may be permitted by a browser, but audible playback requires a visitor interaction.

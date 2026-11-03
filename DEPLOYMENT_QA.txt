@@ -32,3 +32,17 @@ Additional update (3 November 2026)
 - Visitors can choose English or Odia; their choice applies immediately and is intentionally not saved, so the chooser appears again next time.
 - Updated all English display occurrences of “Shubha Bibaha” to “Subha Vivaha”. Odia-script wording remains unchanged.
 - Validation: inline JavaScript syntax check passed; language chooser has English/Odia options; no duplicate IDs; venue → travel → RSVP order retained.
+
+
+LATEST RELEASE QA — 03 NOV 2026
+- Hero: confirmed Option 2 Pattachitra-inspired couple artwork isolated with transparent outer background.
+- Odisha Explorer navigation anchor and section present.
+- Konark celebration wheel: 4 milestone controls.
+- Art gallery: 6 interactive artwork/culture cards.
+- Odia phrase explorer: 4 phrase controls.
+- Hidden clue hunt: 5 clue buttons across hero, intro, story, events and venues.
+- Secret message accepts SUBHA2026 and SUBHAVIVAHA2026.
+- Removed parentage/family-pair section; family assistance contacts remain.
+- Existing language gate, RSVP, scratch card, countdown, background music, GoatCounter and scroll-to-top retained.
+- Automated checks: Node syntax, HTML parsing, IDs and local asset paths.
+- Manual live-browser visual validation is still required after GitHub Pages deployment.
