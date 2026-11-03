@@ -1,19 +1,34 @@
 DEPLOYMENT QA — 03 NOVEMBER 2026
 
-Passed locally:
-- HTML parsed successfully; no duplicate element IDs.
-- JavaScript syntax check passed with Node.js.
-- All local image, SVG, favicon and other asset references resolve within this package.
-- Four event cards use four distinct, event-specific image assets.
-- English is the initial rendered language; remaining visible Odia text is limited to the Odia language selector.
-- All user-facing copy, event dates, event details, venue labels, RSVP labels/options, family roles, music labels, visitor-counter label, and footer copy have English/Odia values.
-- Parentage uses separate line elements; no literal "<br>" text remains.
-- No visible email backup line or duplicate emailRsvp element remains.
-- The family phone cards use Piky Kumari Behera and Bikram Kumar Behera.
-- Seven Google Maps links and four Google Calendar links are present.
+Requested refinements
+[PASS] Removed the large floating YouTube player; replaced it with a single fixed speaker icon.
+[PASS] Speaker icon toggles mute/unmute; soundtrack loads muted and requests autoplay.
+[PASS] Kept the existing complete couple portrait in assets/couple-hero.webp; it matches the supplied hero reference and remains uncropped with object-fit: contain.
+[PASS] Scratch card is repainted on pageshow, including browser back/forward-cache restoration, so it starts covered again after reload/restore.
+[PASS] Travel & Connectivity now follows The Venues section.
+[PASS] GoatCounter endpoint and TOTAL site-wide counter path retained; added visible fallback instead of an endless Loading state.
 
-External service checks not completed from the local package:
-- FormSubmit must be activated once from the destination mailbox after the first live RSVP.
-- YOPmail is a public, password-free inbox; use a private mailbox for confidential RSVP details.
-- GoatCounter requires a free site/account code and enabling visitor counts in settings.
-- YouTube availability and autoplay depend on the video remaining accessible and the visitor's browser/network. Audible autoplay is blocked by many browsers until the visitor interacts.
+Validation
+- JavaScript syntax checked with Node.js: PASS.
+- HTML parsed: PASS.
+- Local asset references checked: PASS (no missing assets).
+- Section order checked: Venues -> Travel -> RSVP.
+- Old floating player elements removed: PASS.
+
+GoatCounter account settings observed in the user's screenshot
+- “Allow adding visitor counts on your website”: checked/enabled.
+- “Dashboard viewable by”: Only logged in users (dashboard privacy only; does not disable public counter display).
+- “Individual pageviews”: unchecked (aggregate totals remain available according to GoatCounter's setting description).
+- “Sessions”: checked.
+
+External limitation
+This local package cannot verify whether the browser's ad-blocking extensions allow requests to gc.zgo.at and bikramwedsitishree.goatcounter.com. If the counter fallback appears, test once in a private window with extensions disabled or allowlist those domains. GoatCounter's public visitor-counter response may be cached for up to four hours.
+
+Deployment
+Upload the ZIP contents (not the containing folder) to the repository root on main. Keep the existing GitHub Pages source as main / root. Wait for the Pages deployment workflow to finish, then hard-refresh the website.
+
+Additional update (3 November 2026)
+- Added a full-screen language chooser shown on every fresh page load and browser refresh.
+- Visitors can choose English or Odia; their choice applies immediately and is intentionally not saved, so the chooser appears again next time.
+- Updated all English display occurrences of “Shubha Bibaha” to “Subha Vivaha”. Odia-script wording remains unchanged.
+- Validation: inline JavaScript syntax check passed; language chooser has English/Odia options; no duplicate IDs; venue → travel → RSVP order retained.

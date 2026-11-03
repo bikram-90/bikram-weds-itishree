@@ -24,16 +24,22 @@ The first live submission may trigger a one-time activation email. Open the dest
 IMPORTANT PRIVACY NOTE
 The current recipient address in index.html is bikramwedsitishree@yopmail.com, preserved from the existing website configuration. YOPmail states that inboxes are public and password-free; anyone who knows the inbox name can read messages. Do NOT use this inbox for guest information you expect to remain private. Before launch, replace RSVP_EMAIL in index.html with a private mailbox that you control, then make the first test submission and confirm FormSubmit at that private mailbox.
 
-VISITOR COUNTER SETUP (ONE-TIME)
-The site includes GoatCounter analytics and a total-visits counter. A GoatCounter site code must be registered before the public counter can display a real number:
-1. Sign up at https://www.goatcounter.com/signup
-2. Use the account/site code `bikramwedsitishree` if available (the page is configured for this code).
-3. Add the GitHub Pages domain as the site domain if prompted.
-4. In GoatCounter site settings, enable “Allow adding visitor counts on your website”.
-5. Publish/redeploy this ZIP. The footer then displays the total visits. If the site code is unavailable, change GOATCOUNTER_ENDPOINT in index.html to your assigned `https://YOURCODE.goatcounter.com/count` endpoint.
+VISITOR COUNTER (GOATCOUNTER)
+The page uses:
+- Tracking endpoint: https://bikramwedsitishree.goatcounter.com/count
+- Script: https://gc.zgo.at/count.js
+- Public counter path: TOTAL (GoatCounter's documented site-wide total)
 
-MUSIC AUTOPLAY
-The embedded YouTube player attempts autoplay muted. Browsers generally block audible autoplay until a visitor interacts with the page; use “Tap to enable sound” in the player or the music control in the navigation. The Open on YouTube link is a fallback if the embed is blocked or the network prevents playback.
+In GoatCounter Settings:
+1. Set “Your site” to https://bikram-90.github.io/bikram-weds-itishree/
+2. Keep “Allow adding visitor counts on your website” checked.
+3. “Dashboard viewable by” controls dashboard privacy; it does not prevent the public counter from displaying.
+4. “Individual pageviews” can remain unchecked; GoatCounter says this does not disable aggregate analytics.
+
+If the footer says “Check ad-blocker” or “Temporarily unavailable”, test in a private/incognito window with extensions disabled. Privacy/ad-blocking extensions may block gc.zgo.at or the GoatCounter domain. GoatCounter also caches public counter responses for up to four hours, so the displayed total may not update immediately.
+
+MUSIC
+The soundtrack starts muted where the browser permits muted autoplay. The single speaker icon at the bottom-right toggles mute/unmute. Browsers do not permit a website to force audible autoplay before user interaction.
 
 CHECKLIST AFTER DEPLOYMENT
 - Check all four event images on desktop and mobile.
@@ -41,3 +47,7 @@ CHECKLIST AFTER DEPLOYMENT
 - Submit one RSVP test and verify both WhatsApp draft and email receipt.
 - Confirm the GoatCounter visit total is visible after its setup is complete.
 - Confirm Maps and Google Calendar links open the intended venues/events.
+
+LATEST UPDATE — 3 NOVEMBER 2026
+- A language selection screen now appears whenever the website is opened or refreshed. Visitors choose English or Odia each time; the choice is not remembered between page loads.
+- The English transliteration has been updated from “Shubha Bibaha” to “Subha Vivaha”.
