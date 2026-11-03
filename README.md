@@ -73,20 +73,6 @@ The visitor counter depends on the external GoatCounter service and the visitor'
 
 The soundtrack is controlled by one speaker icon near the bottom-right of the page. The site starts playback muted where the browser allows muted autoplay. A guest must interact with the speaker control to enable audible playback; browsers do not allow websites to force sound on automatically before user interaction.
 
-## Post-deployment QA checklist
-
-- [ ] Open the website in a new tab and confirm the language-selection screen appears.
-- [ ] Refresh the page and confirm language selection appears again.
-- [ ] Select English and Odia; check headings, event details, navigation, buttons, RSVP labels, and helper text.
-- [ ] Confirm “Subha Vivaha” appears in the intended English wording.
-- [ ] Confirm event artwork and the couple hero image load on desktop and mobile.
-- [ ] Confirm the speaker icon toggles mute/unmute and no floating YouTube player is visible.
-- [ ] Scratch the card, refresh, and confirm the foil resets.
-- [ ] Confirm the section order is Venues → Travel & Connectivity → RSVP.
-- [ ] Test Google Maps and Google Calendar links for each event.
-- [ ] Test the RSVP WhatsApp draft and email delivery after configuring a private recipient and activating FormSubmit.
-- [ ] Verify the GoatCounter total with extensions disabled if the counter is not visible.
-
 ## Event schedule
 
 | Event | Date and time | Venue |
