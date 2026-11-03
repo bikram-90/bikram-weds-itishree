@@ -13,7 +13,7 @@ A bilingual wedding invitation website for Bikram and Itishree, hosted with GitH
 - English transliteration updated from **“Shubha Bibaha”** to **“Subha Vivaha”**.
 - Background soundtrack uses a single speaker control; it starts muted where browser autoplay policies allow and guests can tap to unmute.
 - Scratch-card foil resets on page reload.
-- Travel & Connectivity appears immediately after Venues.
+- Section order is Venues → Odisha Explorer → Travel & Connectivity.
 - GoatCounter visitor-count integration includes a fallback status if the service is blocked or unavailable.
 - Existing couple hero artwork and event assets are retained.
 
@@ -136,7 +136,12 @@ The separate family-parentage section has been removed; the Behera family assist
 ## Latest layout and map update — 3 November 2026
 
 - The page order is **Venues → Odisha Explorer → Travel & Connectivity**.
-- The Mehendi & Haldi residence directions button now opens the supplied Google Maps destination: https://maps.app.goo.gl/zKuygZKZCNKeirrm8.
+- The Mehendi & Haldi residence map buttons and residence venue card open the supplied neighbouring landmark on Google Maps (K-4/9). The displayed event address remains the actual residence, K-4/10, Kalinga Vihar, Bhubaneswar – 751019.
 - The displayed residence address remains: At our residence, K-4/10, Kalinga Vihar, Bhubaneswar – 751019.
 
-After uploading the extracted ZIP contents to the repository root on `main`, verify that the Odisha Explorer appears immediately after the Venues section and that the first venue card opens the correct residence pin.
+After uploading the extracted ZIP contents to the repository root on `main`, verify that the Odisha Explorer appears immediately after the Venues section and that the Mehendi & Haldi map buttons and residence venue card open the neighbouring K-4/9 landmark.
+
+
+### Auspicious opening and blessing artwork
+- Added a compact `॥ Om Ganesha Namah ॥` strip with a Ganesha icon above the navigation.
+- Changed the hero blessing to “With the blessings of Lord Jagannath” with a custom Jagannath–Balabhadra–Subhadra emblem; Odia translation is included.

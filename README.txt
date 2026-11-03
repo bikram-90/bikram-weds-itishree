@@ -136,7 +136,7 @@ The separate family-parentage section has been removed; the Behera family assist
 ## Latest layout and map update — 3 November 2026
 
 - The page order is **Venues → Odisha Explorer → Travel & Connectivity**.
-- The Mehendi & Haldi residence directions button now opens the supplied Google Maps destination: https://maps.app.goo.gl/zKuygZKZCNKeirrm8.
+- The Mehendi & Haldi residence directions button now opens the supplied Google Maps destination: https://www.google.com/maps/place/K-4,+9,+Kalinga+Vihar+LIG,+Kalinganagar,+Subudhipur,+Bhubaneswar,+Odisha+751028/@20.2533123,85.753896,19z/data=!4m15!1m8!3m7!1s0x3a19a86d0341fcb1:0xcb0d391516cb63ef!2sK-4,+Kalinga+Vihar,+Kalinga+Vihar+LIG,+Kalinganagar,+Bhubaneswar,+Odisha+751028!3b1!8m2!3d20.2535425!4d85.7541173!16s%2Fg%2F11f53sbcvr!3m5!1s0x3a19a97a54a852a5:0xe07a2b32f7863e8c!8m2!3d20.2530026!4d85.753877!16s%2Fg%2F11t9tpdx46?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D.
 - The displayed residence address remains: At our residence, K-4/10, Kalinga Vihar, Bhubaneswar – 751019.
 
 After uploading the extracted ZIP contents to the repository root on `main`, verify that the Odisha Explorer appears immediately after the Venues section and that the first venue card opens the correct residence pin.

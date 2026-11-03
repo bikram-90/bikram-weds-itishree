@@ -50,6 +50,9 @@ LATEST RELEASE QA — 03 NOV 2026
 
 LAYOUT / MAP UPDATE — 03 NOV 2026
 - Section order checked: venue -> odishaExplorer -> travel -> rsvp.
-- Mehendi & Haldi directions href set to https://maps.app.goo.gl/zKuygZKZCNKeirrm8.
+- Mehendi & Haldi directions href set to https://www.google.com/maps/place/K-4,+9,+Kalinga+Vihar+LIG,+Kalinganagar,+Subudhipur,+Bhubaneswar,+Odisha+751028/@20.2533123,85.753896,19z/data=!4m15!1m8!3m7!1s0x3a19a86d0341fcb1:0xcb0d391516cb63ef!2sK-4,+Kalinga+Vihar,+Kalinga+Vihar+LIG,+Kalinganagar,+Bhubaneswar,+Odisha+751028!3b1!8m2!3d20.2535425!4d85.7541173!16s%2Fg%2F11f53sbcvr!3m5!1s0x3a19a97a54a852a5:0xe07a2b32f7863e8c!8m2!3d20.2530026!4d85.753877!16s%2Fg%2F11t9tpdx46?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D.
 - Visible residence address retained as K-4/10, Kalinga Vihar, Bhubaneswar – 751019.
 - Live Google Maps destination should be manually confirmed after deployment.
+
+- Confirm the Om Ganesha Namah strip appears above navigation on desktop and mobile.
+- Confirm the hero blessing uses the Jagannath trio emblem and English/Odia text.
