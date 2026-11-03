@@ -131,3 +131,12 @@ The separate family-parentage section has been removed; the Behera family assist
 - Treasure-hunt progress is stored locally in the visitor's browser. It is not sent to the website owner.
 - The secret code is a playful client-side easter egg, not a security feature.
 - Muted autoplay may be permitted by a browser, but audible playback requires a visitor interaction.
+
+
+## Latest layout and map update — 3 November 2026
+
+- The page order is **Venues → Odisha Explorer → Travel & Connectivity**.
+- The Mehendi & Haldi residence directions button now opens the supplied Google Maps destination: https://maps.app.goo.gl/zKuygZKZCNKeirrm8.
+- The displayed residence address remains: At our residence, K-4/10, Kalinga Vihar, Bhubaneswar – 751019.
+
+After uploading the extracted ZIP contents to the repository root on `main`, verify that the Odisha Explorer appears immediately after the Venues section and that the first venue card opens the correct residence pin.

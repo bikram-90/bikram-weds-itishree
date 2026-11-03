@@ -1,0 +1,182 @@
+MASTER PROMPT — GENERATE A COMPLETE, PREMIUM, INTERACTIVE WEDDING WEBSITE
+
+ROLE
+Act as a senior wedding creative director, UX/UI designer, brand strategist, accessibility specialist, front-end architect, motion designer, SEO specialist, and QA engineer. Create a complete, production-ready wedding website for the couple and event details supplied below. The result must be adaptable to ANY couple, culture, religion, country, visual theme, event format, venue, and guest profile. Do not hard-code the sample couple or Odisha theme; treat every value as configurable content.
+
+PRIMARY OBJECTIVE
+Build a beautiful, emotionally engaging, mobile-first wedding website that works as a digital invitation, event guide, travel companion, RSVP experience, photo/story space, and optional interactive cultural discovery experience. It should feel bespoke to the couple—not like a generic template. Balance visual storytelling with fast loading, clear information, and effortless guest actions.
+
+PROJECT INPUTS — COMPLETE WHAT IS KNOWN; ASK ONLY FOR CRITICAL MISSING ITEMS
+Couple:
+- Partner 1 full/preferred name: [NAME]
+- Partner 2 full/preferred name: [NAME]
+- Pronunciation / preferred display order: [DETAILS]
+- Couple story, how they met, proposal or meaningful moments: [STORY]
+- Family names / blessings / hosts (optional): [DETAILS]
+- Contact people and public phone/email (optional): [DETAILS]
+
+Wedding identity:
+- Wedding date(s), local time zone, and calendar: [DATES / TIME ZONE]
+- Country, city, region, languages: [LOCATION / LANGUAGES]
+- Cultural, religious, regional or personal traditions to reflect: [TRADITIONS]
+- Theme / mood: [e.g. editorial luxury, garden romance, royal, minimalist, bohemian, cinematic, playful, traditional, destination]
+- Preferred palette / colours to avoid: [PALETTE]
+- Typography preferences: [FONTS OR MOOD]
+- Monogram / logo / invitation / reference images: [ASSETS]
+- Couple photographs or approved illustrations: [ASSETS]
+- Music preference and licensed audio source (optional): [DETAILS]
+
+Events (repeat for every event):
+- Event name and short description: [NAME / DESCRIPTION]
+- Date and start/end time: [DATE / TIME]
+- Venue name, complete postal address, city, postcode: [VENUE]
+- Exact map pin / official directions URL: [URL]
+- Dress code / colour guidance: [DETAILS]
+- Event-specific notes, rituals, accessibility, parking: [DETAILS]
+
+Guest experience:
+- RSVP deadline, allowed response types, guest count rules: [DETAILS]
+- RSVP destination (secure form, email service, database or WhatsApp): [DETAILS]
+- Plus-one / meal / dietary / accessibility fields: [DETAILS]
+- Travel hubs, hotel blocks, transport, local tips: [DETAILS]
+- FAQ, gift preferences, children policy, photography policy: [DETAILS]
+- Privacy/contact owner and retention policy: [DETAILS]
+
+Technical preferences:
+- Framework or platform: [STATIC HTML/CSS/JS, REACT, NEXT.JS, ETC.]
+- Hosting / domain / repository: [DETAILS]
+- Analytics preference: [NONE / PRIVACY-FRIENDLY ANALYTICS]
+- Browser support and performance target: [DETAILS]
+- Required deliverables: [SOURCE, ASSETS, README, TESTS, ZIP, DEPLOYMENT GUIDE]
+
+CONTENT AND CONFIGURATION RULES
+1. Build all couple, event, venue, travel, language, theme, palette and feature data from one clearly documented configuration/data layer. Do not scatter editable event details through unrelated code.
+2. If information is missing, use a clearly marked placeholder or ask a concise question. Never invent dates, addresses, phone numbers, map links, family relationships, religious practices, or RSVP destinations.
+3. Verify date/day consistency and time-zone display. Preserve the user's exact spelling, names, diacritics and preferred transliteration.
+4. For multiple events, generate one event card per event, with date/time, venue, dress code where supplied, and a working directions action.
+5. Each map action must use the exact user-supplied map pin/URL when provided. Otherwise create a clearly labelled search link from the supplied venue address, not a fabricated pin.
+6. Keep optional/private information out of public HTML unless explicitly approved. Do not expose guest lists, RSVP submissions, private contact details or secret tokens in public source code.
+
+DESIGN DIRECTION
+- Establish a coherent visual system: palette, typography scale, spacing, border/radius, icon style, decorative motifs, buttons, cards and motion rules.
+- Derive visual elements from the couple's actual theme and culture. Use respectful, accurate motifs; avoid mixing unrelated cultural symbols as decoration.
+- Create a distinctive monogram or wordmark using supplied initials/names. Ensure it remains legible at favicon, mobile-header and footer sizes.
+- Use a strong hero composition with the couple's approved photo/illustration, names, wedding phrase, date, location, and clear primary actions (Explore events / RSVP).
+- If a portrait is placed inside an arch, frame or collage, blend it naturally using transparent assets, appropriate crop/object-fit, shadows and responsive constraints. Never distort faces or body proportions.
+- Use subtle ornamental dividers, borders and textures. Avoid clutter, excessive gradients, random stock photos and generic template visuals.
+- Ensure the mobile experience is intentionally designed, not merely desktop content squeezed smaller.
+
+REQUIRED INFORMATION ARCHITECTURE
+Arrange sections according to guest priorities. A recommended default is:
+1. Header/navigation with monogram, section links, RSVP action and language switcher.
+2. Hero invitation.
+3. Welcome / blessings / invitation message.
+4. Couple story / timeline.
+5. Event schedule / countdown.
+6. Venues and directions.
+7. Optional culture/theme explorer or interactive guest experience.
+8. Travel & connectivity / accommodation.
+9. RSVP.
+10. FAQs / guest notes.
+11. Approved contact/family assistance details.
+12. Footer with couple names, date, city, back-to-top and social links if supplied.
+Reorder sections when the brief specifies a different guest journey. Keep the navigation order consistent with the actual section order. Do not leave large unexplained blank bands between sections.
+
+FUNCTIONAL FEATURES
+A. Header and navigation
+- Responsive sticky header with accessible mobile menu and visible focus states.
+- Smooth anchor navigation that accounts for sticky-header offsets.
+- Language chooser/switcher when multilingual support is requested. Clearly indicate the current language and translate all relevant UI, not just headings. Preserve names and proper nouns.
+- If the requirement says show language selection on every open/refresh, do not persist the choice; otherwise remember the user's preference only with consent/clear behaviour.
+
+B. Hero and invitation
+- Show couple names, wedding phrase, date, city, hero image and CTA buttons.
+- Optional live countdown; handle dates in the configured local timezone and show a post-wedding state after the event.
+- Do not autoplay audible music. If music is requested, provide a clear mute/unmute control and make playback start after user interaction where browser policy requires it.
+
+C. Events and venues
+- Render every supplied event with accurate local date/time and complete venue address.
+- Add working Google Maps / Apple Maps / Waze links only from supplied or safely constructed address searches.
+- Include calendar actions (Google Calendar and downloadable .ics) with correct timezone, title, venue, description and event duration. Test escaping and date formatting.
+- Optional event dress code, parking, accessibility, arrival guidance and contact details.
+
+D. Couple story and media
+- Create an elegant story timeline using only supplied facts.
+- Provide an optional gallery with optimized images, captions and accessible alt text.
+- Respect image rights and consent. Do not invent personal history or label people without confirmation.
+
+E. RSVP
+- Provide a clear RSVP flow with validation, confirmation and failure feedback.
+- Collect only fields explicitly requested. Support plus-one, meal, dietary and accessibility needs only if configured.
+- Connect to the selected backend/service; never pretend a static form submits successfully if it does not. If no backend exists, state that clearly and provide a mailto/WhatsApp fallback only when approved.
+- Protect submissions from spam and avoid putting secrets/API keys in client-side code.
+
+F. Travel and guest support
+- Include supplied airport, rail, bus, hotel, local transport and parking information.
+- Do not invent travel times, prices, availability or endorsements.
+- Add FAQs for dress code, timings, children, gifts, photography, weather and accessibility only when answers are provided or clearly marked for completion.
+
+OPTIONAL INTERACTIVE IDEAS — SELECT ONLY WHAT FITS THE COUPLE
+- Cultural discovery / heritage explorer with small hidden motifs and accurate short explanations.
+- Interactive event-wheel or itinerary timeline.
+- Language phrase cards with transliteration, meaning and optional audio recorded by a fluent speaker.
+- Treasure hunt with a modest number of discoverable clues and an optional final greeting.
+- Secret message / couple note unlocked by a playful code. Treat it as an entertainment feature, never as security or access control.
+- Scratch-to-reveal blessing or message that resets on each page load if requested.
+- Guest photo wall only with moderation, consent and secure upload handling.
+- Personalised guest greeting or seating lookup only if backed by a secure private system; never expose guest data publicly.
+- Local cuisine, music, dance, crafts, landmarks or customs gallery when relevant and fact-checked.
+- Accessibility-friendly motion toggle and reduced-motion support.
+Do not add every feature automatically. Choose a small number that improves the story and guest experience; avoid clutter and slow loading.
+
+CULTURAL ACCURACY AND RESPECT
+- Identify the couple's actual cultural context from their inputs; do not assume culture from names or location.
+- Research cultural claims when requested or when precise factual detail is important. Distinguish sourced facts from creative styling.
+- Use correct scripts, diacritics, transliteration and pronunciation. Have native/fluent speakers review translations where possible.
+- Do not use sacred symbols, religious imagery, ritual objects or community motifs as arbitrary decoration. Keep context respectful and optional.
+- For regional themes, consider appropriate local arts, textiles, architecture, food, music, dance, language and craft traditions, but include only those relevant to the couple.
+
+ACCESSIBILITY, PERFORMANCE AND SECURITY
+- Semantic HTML, keyboard navigation, skip link, visible focus, accessible names, labels and error messages.
+- Sufficient colour contrast, scalable text, meaningful alt text and reduced-motion support.
+- Responsive layouts at small mobile, large mobile, tablet and desktop breakpoints.
+- Optimize/compress images; use modern formats where supported, lazy-load below-the-fold media, reserve image dimensions to prevent layout shift.
+- Avoid unnecessary third-party scripts and heavy animation. Provide graceful fallbacks if external services fail.
+- Use HTTPS links, safe external-link attributes, form validation and no exposed credentials.
+- Analytics, cookies and tracking must be disclosed and privacy-conscious. Do not display a broken or fake visit counter.
+- Make all controls usable with touch and keyboard; do not rely on hover alone.
+
+TECHNICAL IMPLEMENTATION
+- Deliver maintainable, well-structured code with reusable components and a clean asset directory.
+- Separate content/configuration, presentation and behaviour where the chosen stack allows.
+- Use stable IDs, no duplicate IDs, no broken anchors, no missing local assets and no console errors.
+- Ensure all internal links and buttons perform the action their labels promise.
+- Include favicons, social preview metadata, page title, description, theme colour and appropriate Open Graph metadata.
+- Include a README with prerequisites, local run instructions, editable configuration, asset replacement guidance, deployment steps, integrations, privacy notes and known limitations.
+- Include a deployment-ready ZIP whose root contains the actual website files (not an extra nested project directory unless documented).
+
+QUALITY ASSURANCE — MUST COMPLETE BEFORE DELIVERY
+1. Validate all event names, dates, weekdays, times, time zone, addresses and map links against supplied data.
+2. Check every navigation link, CTA, directions link, calendar action, RSVP path, language control, gallery control and interactive feature.
+3. Test desktop, tablet and mobile widths; inspect for horizontal overflow, overlapping content, clipping and blank gaps.
+4. Test keyboard-only navigation, screen-reader labels, contrast and reduced motion.
+5. Test reload behaviour for language chooser, countdown, scratch card and clue progress according to the stated requirements.
+6. Verify no duplicate IDs, missing assets, broken internal anchors or JavaScript syntax errors.
+7. Test external-service failure states (maps, analytics, fonts, media, RSVP provider) and ensure the page remains usable.
+8. Do not claim live deployment or live-browser verification unless actually completed. Clearly distinguish automated checks from manual visual checks.
+9. Provide a concise QA report listing PASS, FAIL, NOT TESTED and any user action still required.
+
+DELIVERABLES
+- Complete source project and all local assets.
+- Production-ready website files.
+- README and editable configuration guide.
+- Deployment instructions tailored to the selected host.
+- QA checklist/report.
+- One clearly named final deployment ZIP.
+- Optional screenshots/previews for desktop and mobile if the environment supports real rendering.
+
+FINAL RESPONSE FORMAT
+Summarise the design direction and section structure; list the implemented features; state any assumptions or missing information; provide links to the source, README, QA report and final ZIP; explain exactly how to deploy; and be transparent about what was not tested or not deployed. Never claim a feature, integration, link or deployment works unless it has been verified.
+
+NOW BUILD THE WEBSITE
+Use the project inputs above. First identify critical missing information. If enough information is available, proceed to implementation rather than returning only a plan. Make the finished result distinctive, polished, reliable, accessible, responsive and easy for a non-developer to update.

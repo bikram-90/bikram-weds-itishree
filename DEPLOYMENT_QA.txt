@@ -46,3 +46,10 @@ LATEST RELEASE QA — 03 NOV 2026
 - Existing language gate, RSVP, scratch card, countdown, background music, GoatCounter and scroll-to-top retained.
 - Automated checks: Node syntax, HTML parsing, IDs and local asset paths.
 - Manual live-browser visual validation is still required after GitHub Pages deployment.
+
+
+LAYOUT / MAP UPDATE — 03 NOV 2026
+- Section order checked: venue -> odishaExplorer -> travel -> rsvp.
+- Mehendi & Haldi directions href set to https://maps.app.goo.gl/zKuygZKZCNKeirrm8.
+- Visible residence address retained as K-4/10, Kalinga Vihar, Bhubaneswar – 751019.
+- Live Google Maps destination should be manually confirmed after deployment.
