@@ -373,6 +373,52 @@ body.language-locked{overflow:hidden}
 @media(max-width:760px){.explorer-feature-grid{grid-template-columns:1fr}.hero-grid{gap:16px}.hero-art{max-width:420px}.hero-art img[src*="hero-pattachitra"]{max-height:clamp(390px,112vw,560px)}.art-gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.clue-hero{left:0}}
 @media(max-width:430px){.explorer-panel{padding:20px 17px}.art-tile img{height:58px}.treasure-symbols span{width:34px;height:34px}.secret-form{flex-direction:column}.secret-form button{padding:12px}.konark-wheel{transform:scale(.92);margin-block:10px}}
 
+
+/* Unified invitation hero: restrained Pattachitra detail + The 13th Chapter. */
+.hero-unified{min-height:0;overflow:hidden;background:radial-gradient(ellipse at 78% 28%,rgba(238,208,155,.34),transparent 32%),linear-gradient(130deg,#f8e9d3 0%,#fff8ed 56%,#f0dfc8 100%)}
+.hero-unified .hero-grid{grid-template-columns:minmax(0,1.08fr) minmax(300px,.82fr);gap:clamp(24px,4vw,62px);padding-block:34px 46px}
+.hero-unified .hero-copy{max-width:680px;margin-inline:auto}
+.chapter-banner{position:relative;display:grid;grid-template-columns:1fr auto;align-items:center;gap:2px 16px;max-width:520px;margin:0 auto 20px;padding:12px 18px 14px 24px;text-align:left;border-block:1px solid rgba(190,143,76,.48);background:linear-gradient(90deg,rgba(255,250,239,.9),rgba(255,250,239,.56));isolation:isolate}
+.chapter-banner:before{content:"";position:absolute;inset:0;background:url('assets/konark-wheel.svg') left center/74px 74px no-repeat;opacity:.10;z-index:-1;pointer-events:none}
+.chapter-banner:after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:5px;background:url('assets/odia-pattachitra-border.svg') left center/auto 5px repeat-x;opacity:.65}
+.chapter-title{font:italic 600 clamp(1.35rem,2.3vw,1.9rem)/1.1 var(--serif);color:var(--wine)}
+.chapter-subtitle{font:italic .9rem var(--serif);color:#93635c;grid-column:1}
+.chapter-count{grid-column:2;grid-row:1/span 2;display:flex;align-items:baseline;gap:7px;padding-left:14px;border-left:1px solid rgba(190,143,76,.42);color:var(--wine)}
+.chapter-count strong{font:600 clamp(2rem,3.5vw,2.8rem)/1 var(--serif);font-variant-numeric:tabular-nums}
+.chapter-count span{max-width:78px;font-size:.62rem;line-height:1.3;color:var(--muted);letter-spacing:.04em}
+.hero-unified .ganesha-blessing{margin-bottom:9px}
+.hero-unified .hero-kicker{font-size:1rem;margin:0 0 8px}
+.hero-families{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;max-width:620px;margin:0 auto;color:var(--wine);font:600 clamp(.76rem,1.1vw,.95rem)/1.4 var(--serif)}
+.hero-families>div{padding:4px 7px}
+.family-join{font:italic 1.5rem var(--serif);color:var(--gold)}
+.hero-invite{max-width:570px;margin:10px auto 12px;color:#79575a;font:italic clamp(.88rem,1.25vw,1.05rem)/1.4 var(--serif)}
+.hero-unified .hero-copy h1{font-size:clamp(3.15rem,6vw,5.6rem);line-height:.9;margin-top:3px}
+.hero-unified .hero-odia{margin-top:12px;font-size:1.1rem}
+.hero-unified .hero-date{margin-top:15px;font-size:.7rem}
+.hero-unified .hero-location{font-size:.78rem}
+.hero-unified .hero-actions{margin-top:20px}
+.hero-unified .hero-art{width:min(100%,420px);padding:15px 18px 18px;border-radius:48% 48% 22px 22px}
+.hero-unified .hero-art:before{inset:4% 5% 3%;border-radius:48% 48% 20px 20px}
+.hero-flip-card{display:block;position:relative;width:min(100%,330px);aspect-ratio: .68;border:0;padding:0;margin:0 auto;background:transparent;perspective:1400px;cursor:pointer;color:var(--wine);-webkit-tap-highlight-color:transparent}
+.hero-flip-card:focus-visible,.hero-flip-caption:focus-visible{outline:3px solid var(--gold);outline-offset:5px;border-radius:18px}
+.hero-flip-inner{position:absolute;inset:0;display:block;transform-style:preserve-3d;transition:transform .85s cubic-bezier(.2,.75,.2,1)}
+.hero-flip-card.is-flipped .hero-flip-inner{transform:rotateY(180deg)}
+.hero-flip-front,.hero-flip-back{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid rgba(189,141,75,.65);border-radius:46% 46% 16px 16px;background:#fff8ed;backface-visibility:hidden;-webkit-backface-visibility:hidden;box-shadow:0 14px 26px rgba(77,35,34,.12)}
+.hero-unified .hero-flip-front img[src*="hero-pattachitra-couple"]{width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center center!important;border-radius:0!important;mix-blend-mode:normal!important;filter:none!important}
+.hero-flip-back{transform:rotateY(180deg);flex-direction:column;gap:8px;padding:24px 16px;background:radial-gradient(circle at center,rgba(237,215,177,.25),transparent 60%),linear-gradient(145deg,#fff9ee,#f5e3ce);border:5px double #c99a56}
+.hero-flip-back:before{content:"";position:absolute;inset:12px;border:1px solid rgba(188,136,66,.4);border-radius:44% 44% 10px 10px;pointer-events:none}
+.flip-back-kicker{font:italic 1rem var(--serif);color:#94635c}
+.hero-flip-back strong{font:500 clamp(5rem,10vw,7rem)/.9 var(--serif);color:var(--wine)}
+.flip-month{font:700 .95rem var(--sans);letter-spacing:.22em;color:#a97839}
+.flip-year{font:500 1.8rem var(--serif);color:var(--wine)}
+.flip-flower{font-size:1.5rem;color:#c4934d;margin-top:8px}
+.flip-back-note{font:italic .9rem var(--serif);color:#94635c}
+.hero-flip-caption{display:block;margin:12px auto 0;padding:8px 17px;border:1px solid rgba(189,141,75,.42);border-radius:40px;background:rgba(255,250,239,.88);color:var(--wine);font:italic .9rem var(--serif);cursor:pointer;box-shadow:0 6px 16px rgba(77,35,34,.07)}
+.hero-unified .hero-konark{left:-48px;top:22%;width:clamp(100px,13vw,175px);height:auto;opacity:.07;z-index:-1;pointer-events:none}
+@media(max-width:900px){.hero-unified .hero-grid{grid-template-columns:minmax(0,1fr) minmax(270px,.85fr);gap:18px}.hero-families{gap:4px}.hero-unified .hero-copy h1{font-size:clamp(2.8rem,6.8vw,4.5rem)}}
+@media(max-width:680px){.hero-unified .hero-grid{grid-template-columns:1fr;gap:18px;padding:28px 0 40px}.hero-unified .hero-copy{max-width:560px}.chapter-banner{max-width:440px;margin-bottom:16px;padding:10px 13px 12px 18px}.chapter-title{font-size:1.45rem}.chapter-subtitle{font-size:.82rem}.chapter-count strong{font-size:2.25rem}.chapter-count span{font-size:.56rem}.hero-unified .ganesha-blessing{margin-bottom:8px}.hero-unified .hero-kicker{font-size:.9rem}.hero-families{font-size:.76rem;gap:3px}.hero-families>div{padding:3px 2px}.hero-invite{font-size:.88rem;margin:8px auto 10px}.hero-unified .hero-copy h1{font-size:clamp(3.25rem,14vw,4.7rem);line-height:.94}.hero-unified .hero-odia{font-size:1rem;margin-top:9px}.hero-unified .hero-date{font-size:.65rem;margin-top:12px}.hero-unified .hero-actions{margin-top:16px}.hero-unified .hero-art{width:min(86%,350px);padding:12px;margin:0 auto}.hero-flip-card{width:min(100%,300px);aspect-ratio:.68}.hero-flip-caption{font-size:.84rem}.hero-unified .hero-konark{left:-45px;top:5%;width:115px;opacity:.06}}
+@media(max-width:390px){.hero-families{grid-template-columns:1fr;gap:2px}.family-join{font-size:1rem;line-height:1}.hero-unified .hero-copy h1{font-size:3.05rem}.chapter-count{padding-left:9px}.chapter-count strong{font-size:1.95rem}.chapter-count span{max-width:68px}}
+@media(prefers-reduced-motion:reduce){.hero-flip-inner{transition:none}.hero-art{animation:none!important}}
 </style>
 <link href="https://bikram-90.github.io/bikram-weds-itishree/" rel="canonical"/></head>
 <body class="language-locked">
@@ -394,38 +440,42 @@ body.language-locked{overflow:hidden}
 </div>
 <header class="topbar"><div class="wrap nav"><a class="brand" href="#home"><img alt="Bikram and Itishree monogram" data-en-alt="Bikram and Itishree monogram" data-or-alt="ବିକ୍ରମ ଓ ଇତିଶ୍ରୀଙ୍କ ମୋନୋଗ୍ରାମ" class="nav-logo" src="assets/ib-monogram-gold.png"/><span data-en="B &amp; I" data-or="ବିକ୍ରମ ଓ ଇତିଶ୍ରୀ">B &amp; I</span> <small data-en="Subha Vivaha · 2026" data-or="ଶୁଭ ବିବାହ · ୨୦୨୬">Subha Vivaha · 2026</small></a><button aria-expanded="false" aria-label="Open navigation" class="menu-btn" data-en-aria-label="Open navigation" data-or-aria-label="ମେନୁ ଖୋଲନ୍ତୁ" id="menuBtn">☰</button><nav aria-label="Main navigation" class="navlinks" id="navLinks"><a data-en="Home" data-or="ମୁଖ୍ୟ ପୃଷ୍ଠା" href="#home">Home</a><a data-en="Our Story" data-or="ଆମ କାହାଣୀ" href="#story">Our Story</a><a data-en="Celebrations" data-or="ଉତ୍ସବ" href="#events">Celebrations</a><a data-en="Travel" data-or="ଯାତାୟାତ" href="#travel">Travel</a><a data-en="Odisha Explorer" data-or="ଓଡ଼ିଶା ଅନ୍ୱେଷଣ" href="#odishaExplorer">Odisha Explorer</a><a class="nav-cta" data-en="RSVP" data-or="ଉପସ୍ଥିତି ଜଣାନ୍ତୁ" href="#rsvp">RSVP</a><div aria-label="Choose language" class="lang-toggle" data-en-aria-label="Choose language" data-or-aria-label="ଭାଷା ବାଛନ୍ତୁ" role="group"><button aria-pressed="true" data-lang="en" type="button">English</button><button aria-pressed="false" data-lang="or" type="button">ଓଡ଼ିଆ</button></div></nav></div></header>
 <main>
-<section aria-label="Bikram and Itishree wedding invitation" data-en-aria-label="Bikram and Itishree wedding invitation" data-or-aria-label="ବିକ୍ରମ ଓ ଇତିଶ୍ରୀଙ୍କ ବିବାହ ନିମନ୍ତ୍ରଣ" class="hero" id="home">
+<section aria-label="Bikram and Itishree wedding invitation" data-en-aria-label="Bikram and Itishree wedding invitation" data-or-aria-label="ବିକ୍ରମ ଓ ଇତିଶ୍ରୀଙ୍କ ବିବାହ ନିମନ୍ତ୍ରଣ" class="hero hero-unified" id="home">
 <span class="petal"></span><span class="petal"></span><span class="petal"></span><span class="petal"></span><span class="petal"></span>
 <img alt="" aria-hidden="true" class="hero-konark" src="assets/konark-wheel.webp"/>
-<img alt="" aria-hidden="true" class="hero-temple" src="assets/jagannath-temple.webp"/>
 <div class="wrap hero-grid">
-<div class="hero-copy">
-<div class="ganesha-blessing jagannath-blessing"><img alt="Lord Jagannath, Balabhadra and Subhadra" src="assets/jagannath-icon.png"/><span class="top-blessing" data-en="With the blessings of Lord Jagannath" data-or="ଶ୍ରୀଜଗନ୍ନାଥଙ୍କ ଆଶୀର୍ବାଦ ସହିତ">With the blessings of Lord Jagannath</span></div><div class="hero-kicker" data-en="Together with their families" data-or="ପରିବାରବର୍ଗଙ୍କ ସହିତ">Together with their families</div>
-<h1><span data-en="Bikram" data-or="ବିକ୍ରମ">Bikram</span> <span class="amp">&amp;</span><br/><span data-en="Itishree" data-or="ଇତିଶ୍ରୀ">Itishree</span></h1>
-
-<p class="hero-sub" data-en="invite you to be a part of their wedding celebrations" data-or="ଆମ ବିବାହ ଉତ୍ସବରେ ଯୋଗଦେବାକୁ ଆପଣଙ୍କୁ ସାଦର ନିମନ୍ତ୍ରଣ">invite you to be a part of their wedding celebrations</p>
-   <div class="hero-odia odia" data-en="Subha Vivaha" data-or="ଶୁଭ ବିବାହ">Subha Vivaha</div>
-<div class="hero-date" data-en="13 December 2026 · 7:30 PM onwards" data-or="୧୩ ଡିସେମ୍ବର ୨୦୨୬ · ସନ୍ଧ୍ୟା ୭:୩୦ ରୁ">13 December 2026 · 7:30 PM onwards</div>
-<div class="hero-location" data-en="The Regal Palm · Bhubaneswar, Odisha" data-or="ଦି ରିଗାଲ୍ ପାମ୍ · ଭୁବନେଶ୍ୱର, ଓଡ଼ିଶା">The Regal Palm · Bhubaneswar, Odisha</div>
-<div class="hero-actions"><a class="btn btn-primary" data-en="Explore celebrations ↓" data-or="ଉତ୍ସବଗୁଡ଼ିକ ଦେଖନ୍ତୁ ↓" href="#events">Explore celebrations ↓</a><a class="btn btn-light" data-en="Send your RSVP" data-or="ଆପଣଙ୍କ ଉପସ୍ଥିତି ଜଣାନ୍ତୁ" href="#rsvp">Send your RSVP</a></div>
-</div>
-<div class="hero-art"><button class="hidden-clue clue-hero" type="button" data-clue="jagannath" aria-label="Discover a hidden Jagannath clue" title="A little hidden surprise">✺</button><div class="seal odia" data-en="Subha Vivaha" data-or="ଶୁଭ ବିବାହ">Subha Vivaha</div><img alt="Bikram and Itishree in Odia wedding attire before a Pattachitra-inspired Jagannath backdrop" data-en-alt="Illustrated portrait of Bikram and Itishree in traditional wedding attire" data-or-alt="ଜଗନ୍ନାଥ ପଟ୍ଟଚିତ୍ର ପୃଷ୍ଠଭୂମିରେ ଓଡ଼ିଆ ବିବାହ ପୋଷାକରେ ବିକ୍ରମ ଓ ଇତିଶ୍ରୀ" fetchpriority="high" decoding="async" src="assets/hero-pattachitra-couple.png"/><div class="art-caption" data-en="A little story, a forever beginning ♡" data-or="ଏକ ସୁନ୍ଦର କାହାଣୀ, ଚିରଦିନର ଆରମ୍ଭ ♡">A little story, a forever beginning ♡</div></div>
+  <div class="hero-copy">
+    <div class="chapter-banner" aria-live="off">
+      <div class="chapter-title" data-en="The 13th Chapter" data-or="୧୩ତମ ଅଧ୍ୟାୟ">The 13th Chapter</div>
+      <div class="chapter-subtitle" data-en="Our forever begins soon" data-or="ଆମ ଚିରନ୍ତନ ଯାତ୍ରା ଶୀଘ୍ର ଆରମ୍ଭ ହେବ">Our forever begins soon</div>
+      <div class="chapter-count"><strong id="chapterDays">—</strong><span data-en="days to our forever" data-or="ଆମ ଚିରନ୍ତନ ଦିନକୁ ବାକି">days to our forever</span></div>
+    </div>
+    <div class="ganesha-blessing jagannath-blessing"><img alt="Lord Jagannath, Balabhadra and Subhadra" src="assets/jagannath-icon.png"/><span class="top-blessing" data-en="With the blessings of Lord Jagannath" data-or="ଶ୍ରୀଜଗନ୍ନାଥଙ୍କ ଆଶୀର୍ବାଦ ସହିତ">With the blessings of Lord Jagannath</span></div>
+    <div class="hero-kicker" data-en="Together with their families" data-or="ପରିବାରବର୍ଗଙ୍କ ସହିତ">Together with their families</div>
+    <div class="hero-families">
+      <div><span data-en="Mrs. Kaushalya Behera &amp; Mr. Bindu Bhusan Behera" data-or="ଶ୍ରୀମତୀ କୌଶଲ୍ୟା ବେହେରା ଓ ଶ୍ରୀଯୁକ୍ତ ବିନ୍ଦୁ ଭୂଷଣ ବେହେରା">Mrs. Kaushalya Behera &amp; Mr. Bindu Bhusan Behera</span></div>
+      <span class="family-join" aria-hidden="true">&amp;</span>
+      <div><span data-en="Mrs. Sipra Sundarray &amp; Mr. Bhramarbar Sundarray" data-or="ଶ୍ରୀମତୀ ସିପ୍ରା ସୁନ୍ଦରାୟ ଓ ଶ୍ରୀଯୁକ୍ତ ଭ୍ରମରବର ସୁନ୍ଦରାୟ">Mrs. Sipra Sundarray &amp; Mr. Bhramarbar Sundarray</span></div>
+    </div>
+    <p class="hero-invite" data-en="cordially invite you to celebrate the wedding of their children" data-or="ତାଙ୍କ ସନ୍ତାନମାନଙ୍କ ବିବାହ ଉତ୍ସବରେ ଯୋଗଦେବାକୁ ଆପଣଙ୍କୁ ସାଦର ନିମନ୍ତ୍ରଣ କରୁଛନ୍ତି">cordially invite you to celebrate the wedding of their children</p>
+    <h1><span data-en="Bikram" data-or="ବିକ୍ରମ">Bikram</span> <span class="amp" data-en="&amp;" data-or="ଓ">&amp;</span><br/><span data-en="Itishree" data-or="ଇତିଶ୍ରୀ">Itishree</span></h1>
+    <div class="hero-odia odia" data-en="Subha Vivaha" data-or="ଶୁଭ ବିବାହ">Subha Vivaha</div>
+    <div class="hero-date" data-en="13 December 2026 · 7:30 PM onwards" data-or="୧୩ ଡିସେମ୍ବର ୨୦୨୬ · ସନ୍ଧ୍ୟା ୭:୩୦ ରୁ">13 December 2026 · 7:30 PM onwards</div>
+    <div class="hero-location" data-en="The Regal Palm · Bhubaneswar, Odisha" data-or="ଦି ରିଗାଲ୍ ପାମ୍ · ଭୁବନେଶ୍ୱର, ଓଡ଼ିଶା">The Regal Palm · Bhubaneswar, Odisha</div>
+    <div class="hero-actions"><a class="btn btn-primary" data-en="Explore celebrations ↓" data-or="ଉତ୍ସବଗୁଡ଼ିକ ଦେଖନ୍ତୁ ↓" href="#events">Explore celebrations ↓</a><a class="btn btn-light" data-en="Send your RSVP" data-or="ଆପଣଙ୍କ ଉପସ୍ଥିତି ଜଣାନ୍ତୁ" href="#rsvp">Send your RSVP</a></div>
+  </div>
+  <div class="hero-art">
+    <button class="hidden-clue clue-hero" type="button" data-clue="jagannath" aria-label="Discover a hidden Jagannath clue" title="A little hidden surprise">✺</button>
+    <button class="hero-flip-card" id="heroFlip" type="button" aria-pressed="false" data-en-aria-label="Flip our illustrated portrait to reveal the wedding date" data-or-aria-label="ବିବାହ ତାରିଖ ଦେଖିବା ପାଇଁ ଚିତ୍ରଟିକୁ ଓଲଟାନ୍ତୁ" aria-label="Flip our illustrated portrait to reveal the wedding date">
+      <span class="hero-flip-inner">
+        <span class="hero-flip-front"><img alt="Bikram and Itishree in Odia wedding attire before a Pattachitra-inspired Jagannath backdrop" data-en-alt="Illustrated portrait of Bikram and Itishree in traditional wedding attire" data-or-alt="ଜଗନ୍ନାଥ ପଟ୍ଟଚିତ୍ର ପୃଷ୍ଠଭୂମିରେ ଓଡ଼ିଆ ବିବାହ ପୋଷାକରେ ବିକ୍ରମ ଓ ଇତିଶ୍ରୀ" src="assets/hero-pattachitra-couple.png"/></span>
+        <span class="hero-flip-back" aria-hidden="true"><span class="flip-back-kicker" data-en="Our special day" data-or="ଆମର ବିଶେଷ ଦିନ">Our special day</span><strong>13</strong><span class="flip-month" data-en="DECEMBER" data-or="ଡିସେମ୍ବର">DECEMBER</span><span class="flip-year">2026</span><span class="flip-flower">✿</span><span class="flip-back-note" data-en="The 13th Chapter begins" data-or="୧୩ତମ ଅଧ୍ୟାୟର ଆରମ୍ଭ">The 13th Chapter begins</span></span>
+      </span>
+    </button>
+    <button class="hero-flip-caption" type="button" id="heroFlipCaption" data-en="Tap to turn our story and reveal the date ↻" data-or="ତାରିଖ ଦେଖିବା ପାଇଁ ଚିତ୍ରଟିକୁ ଓଲଟାନ୍ତୁ ↻">Tap to turn our story and reveal the date ↻</button>
+  </div>
 </div>
 </section>
-
-
-<section class="intro" id="welcome"><button class="hidden-clue clue-intro" type="button" data-clue="konark" aria-label="Discover a hidden Konark clue" title="A little hidden surprise">☼</button><div class="wrap reveal"><div class="eyebrow" data-en="You are warmly invited" data-or="ଆପଣଙ୍କୁ ସାଦର ନିମନ୍ତ୍ରଣ">You are warmly invited</div><div class="odia" data-en="Join us for our wedding celebrations and bless us." data-or="ଆମ ବିବାହ ଉତ୍ସବରେ ଯୋଗଦେଇ ଆମକୁ ଆଶୀର୍ବାଦ କରନ୍ତୁ।" lang="or">Join us for our wedding celebrations and bless us.</div><p class="intro-copy" data-en="With the blessings of our families, we invite you to join us as two hearts and two families come together. Your presence will make every moment even more special." data-or="ପରିବାରବର୍ଗଙ୍କ ଆଶୀର୍ବାଦ ସହିତ, ଦୁଇଟି ହୃଦୟ ଓ ଦୁଇଟି ପରିବାରର ଏହି ମିଳନ ଉତ୍ସବରେ ଆପଣଙ୍କୁ ସାଦର ନିମନ୍ତ୍ରଣ। ଆପଣଙ୍କ ଉପସ୍ଥିତି ପ୍ରତ୍ୟେକ ମୁହୂର୍ତ୍ତକୁ ଆହୁରି ସ୍ମରଣୀୟ କରିଦେବ।">With the blessings of our families, we invite you to join us as two hearts and two families come together. Your presence will make every moment even more special.</p><div class="ornament">✿</div><div class="scratch-wrap reveal">
-  <div class="scratch-card" id="scratchCard">
-    <div class="scratch-reveal" id="scratchReveal">
-      <span class="scratch-kicker" data-en="The day we've been waiting for" data-or="ଆମେ ଅପେକ୍ଷା କରିଥିବା ଶୁଭ ଦିନ">The day we've been waiting for</span>
-      <strong data-en="13 December 2026" data-or="୧୩ ଡିସେମ୍ବର ୨୦୨୬">13 December 2026</strong>
-      <em data-en="A forever begins" data-or="ଏକ ଚିରନ୍ତନ ଯାତ୍ରାର ଆରମ୍ଭ">A forever begins</em>
-    </div>
-    <canvas aria-label="Scratch to reveal the wedding date" data-en-aria-label="Scratch to reveal the wedding date" data-or-aria-label="ବିବାହ ତାରିଖ ଦେଖିବା ପାଇଁ ଘଷନ୍ତୁ" id="scratchCanvas"></canvas>
-    <div class="scratch-prompt" id="scratchPrompt"><span>✦</span><strong data-en="SCRATCH TO REVEAL" data-or="ଘଷି ଦେଖନ୍ତୁ">SCRATCH TO REVEAL</strong><em data-en="our special day" data-or="ଆମର ବିଶେଷ ଦିନ">our special day</em><span>✦</span></div>
-  </div>
-  <button class="scratch-reset" id="scratchRevealButton" type="button" data-en="Reveal the date" data-or="ତାରିଖ ଦେଖନ୍ତୁ">Reveal the date</button>
-</div><div class="eyebrow" data-en="The celebration begins in" data-or="ଉତ୍ସବ ଆରମ୍ଭ ହେବାକୁ ବାକି">The celebration begins in</div><div aria-label="Countdown to the wedding ceremony" class="countdown" data-en-aria-label="Countdown to the wedding ceremony" data-or-aria-label="ବିବାହ ଉତ୍ସବ ପାଇଁ ବାକି ସମୟ"><div class="count"><b id="days">—</b><span data-en="Days" data-or="ଦିନ">Days</span></div><div class="count"><b id="hours">—</b><span data-en="Hours" data-or="ଘଣ୍ଟା">Hours</span></div><div class="count"><b id="minutes">—</b><span data-en="Minutes" data-or="ମିନିଟ୍">Minutes</span></div><div class="count"><b id="seconds">—</b><span data-en="Seconds" data-or="ସେକେଣ୍ଡ">Seconds</span></div></div></div></section>
 
 <div class="motif-band" data-en="Odia heritage · Auspicious beginnings · A love without end" data-or="ଓଡ଼ିଆ ପରମ୍ପରା · ଶୁଭ ଆରମ୍ଭ · ଅନନ୍ତ ପ୍ରେମ">Odia heritage · Auspicious beginnings · A love without end</div>
 <section class="section story" id="story"><button class="hidden-clue clue-story" type="button" data-clue="ikat" aria-label="Discover a hidden Sambalpuri clue" title="A little hidden surprise">✧</button><div class="wrap story-grid"><div class="story-art reveal"><img alt="Watercolor-style illustration of the couple watching the sunset together" data-en-alt="Watercolor-style illustration of the couple watching the sunset together" data-or-alt="ସୂର୍ଯ୍ୟାସ୍ତ ଦେଖୁଥିବା ଯୁଗଳଙ୍କ ଜଳରଙ୍ଗ ଚିତ୍ର" loading="lazy" src="assets/watercolor-story.webp"/></div><div class="story-copy reveal"><div class="eyebrow" data-en="Two cities · One beautiful story" data-or="ଦୁଇଟି ସହର · ଗୋଟିଏ ସୁନ୍ଦର କାହାଣୀ">Two cities · One beautiful story</div><h2 class="section-title" data-en="Our Story" data-or="ଆମ କାହାଣୀ">Our Story</h2><div class="ornament" style="justify-content:flex-start;margin-left:0">♡</div><div class="story-block"><h3 data-en="The Beginning" data-or="ଆରମ୍ଭ">The Beginning</h3><p data-en="Though we were both born and raised in Bhubaneswar, our paths had never crossed. Somehow, two strangers found their way into each other's lives, and a few conversations soon became something special." data-or="ଆମେ ଦୁହେଁ ଭୁବନେଶ୍ୱରରେ ଜନ୍ମଗ୍ରହଣ କରି ବଢ଼ିଥିଲେ ମଧ୍ୟ, ଆମ ପଥ କେବେ ମିଶିନଥିଲା। କିନ୍ତୁ ଦୁଇ ଅଜଣା ମଣିଷ ଧୀରେ ଧୀରେ ପରସ୍ପରର ଜୀବନରେ ଆସିଲେ, ଆଉ କିଛି କଥାବାର୍ତ୍ତା ଏକ ସୁନ୍ଦର ସମ୍ପର୍କରେ ପରିଣତ ହେଲା।">Though we were both born and raised in Bhubaneswar, our paths had never crossed. Somehow, two strangers found their way into each other's lives, and a few conversations soon became something special.</p></div><div class="story-block"><h3 data-en="Coffee Plans, Chai Destiny! ☕" data-or="କଫିର ଯୋଜନା, ଚା’ର ଭାଗ୍ୟ! ☕">Coffee Plans, Chai Destiny! ☕</h3><p data-en="Our first meeting in Bengaluru was supposed to be over coffee. The café was full, so coffee turned into chai! Turns out, the best things don't always go as planned." data-or="ବେଙ୍ଗାଲୁରୁରେ ଆମର ପ୍ରଥମ ସାକ୍ଷାତ କଫି ପିଇବାର ଯୋଜନା ଥିଲା। କିନ୍ତୁ କଫି ଦୋକାନରେ ଜାଗା ନଥିଲା, ତେଣୁ କଫି ବଦଳରେ ଚା’ ହେଲା! ବେଳେବେଳେ ଯୋଜନା ବଦଳିଲେ ହିଁ ସବୁଠାରୁ ସୁନ୍ଦର କାହାଣୀ ଆରମ୍ଭ ହୁଏ।">Our first meeting in Bengaluru was supposed to be over coffee. The café was full, so coffee turned into chai! Turns out, the best things don't always go as planned.</p></div><div class="story-block"><h3 data-en="A New Chapter" data-or="ଏକ ନୂଆ ଅଧ୍ୟାୟ">A New Chapter</h3><p data-en="Somewhere between conversations, shared smiles and little moments, we found something special. With our families beside us and their blessings guiding us, we're ready to begin the most beautiful chapter of our lives — together." data-or="କଥାବାର୍ତ୍ତା, ହସଭରା ମୁହୂର୍ତ୍ତ ଓ ଛୋଟ ଛୋଟ ସ୍ମୃତି ମଧ୍ୟରେ, ଆମେ ଏକ ଅମୂଲ୍ୟ ସମ୍ପର୍କ ଖୋଜି ପାଇଲୁ। ପରିବାରର ସାଥ୍ ଓ ଆଶୀର୍ବାଦ ସହିତ, ଆମେ ଏକାଠି ଆମ ଜୀବନର ନୂଆ ଅଧ୍ୟାୟ ଆରମ୍ଭ କରିବାକୁ ପ୍ରସ୍ତୁତ।">Somewhere between conversations, shared smiles and little moments, we found something special. With our families beside us and their blessings guiding us, we're ready to begin the most beautiful chapter of our lives — together.</p></div><div class="odia" data-en="And now, forever begins." data-or="ଏବେ ଆରମ୍ଭ ହେଉଛି ଆମର ଚିରନ୍ତନ ଯାତ୍ରା।" lang="or">And now, forever begins.</div></div></div></section>
@@ -582,37 +632,13 @@ function chooseLanguage(lang){
 languageGate.querySelectorAll('button[data-lang]').forEach(button=>button.addEventListener('click',()=>chooseLanguage(button.dataset.lang)));
 
 
-// Accessible scratch-to-reveal card. Touch, mouse and the reveal button are supported.
-(()=>{
-  const canvas=document.getElementById('scratchCanvas'),card=document.getElementById('scratchCard'),button=document.getElementById('scratchRevealButton');
-  if(!canvas||!card||!button)return;
-  const ctx=canvas.getContext('2d');let drawing=false,erased=0,lastPoint=null;
-  function paintCover(){
-    const rect=card.getBoundingClientRect(),dpr=Math.min(window.devicePixelRatio||1,2);
-    canvas.width=Math.round(rect.width*dpr);canvas.height=Math.round(rect.height*dpr);
-    ctx.setTransform(dpr,0,0,dpr,0,0);
-    const g=ctx.createLinearGradient(0,0,rect.width,rect.height);g.addColorStop(0,'#d8a8bd');g.addColorStop(.52,'#e4c2cd');g.addColorStop(1,'#d9b879');
-    ctx.globalCompositeOperation='source-over';ctx.fillStyle=g;ctx.fillRect(0,0,rect.width,rect.height);
-    for(let i=0;i<85;i++){const x=(i*73%997)/997*rect.width,y=(i*137%991)/991*rect.height;ctx.fillStyle='rgba(255,250,240,.42)';ctx.beginPath();ctx.arc(x,y,1+(i%3)*.35,0,Math.PI*2);ctx.fill();}
-    ctx.globalCompositeOperation='destination-out';erased=0;lastPoint=null;card.classList.remove('is-revealed');
-  }
-  function point(e){const r=canvas.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top};}
-  function scratch(e){if(!drawing)return;const p=point(e);ctx.globalCompositeOperation='destination-out';ctx.lineWidth=34;ctx.lineCap='round';ctx.lineJoin='round';ctx.beginPath();if(lastPoint){ctx.moveTo(lastPoint.x,lastPoint.y);ctx.lineTo(p.x,p.y);}else{ctx.arc(p.x,p.y,17,0,Math.PI*2);}ctx.stroke();lastPoint=p;erased+=1;if(erased>34)reveal();}
-  function reveal(){card.classList.add('is-revealed');drawing=false;}
-  canvas.addEventListener('pointerdown',e=>{drawing=true;canvas.setPointerCapture?.(e.pointerId);lastPoint=null;scratch(e);});
-  canvas.addEventListener('pointermove',scratch);
-  ['pointerup','pointercancel','lostpointercapture'].forEach(ev=>canvas.addEventListener(ev,()=>{drawing=false;lastPoint=null;}));
-  button.addEventListener('click',reveal);
-  paintCover();
-  // Always restore a fresh scratch surface after reload or browser back/forward-cache restore.
-  window.addEventListener('pageshow',()=>{drawing=false;paintCover();});
-  window.addEventListener('resize',()=>{if(!card.classList.contains('is-revealed'))paintCover();});
-})();
+// The 13th Chapter countdown: a single day count, intentionally not a days/hours/minutes/seconds timer.
+const chapterTarget=new Date('2026-12-13T19:30:00+05:30').getTime();
+function updateChapterDays(){const el=document.getElementById('chapterDays');if(!el)return;const remaining=Math.max(0,chapterTarget-Date.now());el.textContent=String(Math.ceil(remaining/86400000));}
+updateChapterDays();setInterval(updateChapterDays,60*60*1000);
 
-// Live countdown to the wedding ceremony: 13 December 2026, 7:30 PM IST.
-const target=new Date('2026-12-13T19:30:00+05:30').getTime();
-function tick(){const diff=Math.max(0,target-Date.now());document.getElementById('days').textContent=Math.floor(diff/86400000);document.getElementById('hours').textContent=String(Math.floor(diff%86400000/3600000)).padStart(2,'0');document.getElementById('minutes').textContent=String(Math.floor(diff%3600000/60000)).padStart(2,'0');document.getElementById('seconds').textContent=String(Math.floor(diff%60000/1000)).padStart(2,'0');}
-tick();setInterval(tick,1000);
+// Accessible flip-to-reveal date card. Supports click, touch, Enter and Space.
+(()=>{const card=document.getElementById('heroFlip'),caption=document.getElementById('heroFlipCaption');if(!card||!caption)return;function flip(){const on=card.classList.toggle('is-flipped');card.setAttribute('aria-pressed',String(on));const lang=window.weddingLanguage==='or';caption.textContent=on?(lang?'ଚିତ୍ରକୁ ପୁଣି ଓଲଟାନ୍ତୁ ↻':'Turn back to our story ↻'):(lang?'ତାରିଖ ଦେଖିବା ପାଇଁ ଚିତ୍ରଟିକୁ ଓଲଟାନ୍ତୁ ↻':'Tap to turn our story and reveal the date ↻');}card.addEventListener('click',flip);caption.addEventListener('click',flip);})();
 
 // Mobile navigation.
 const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
