@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 100" role="img" aria-label="Lord Jagannath, Balabhadra and Subhadra">
+<g stroke="#9a572d" stroke-width="2.4" stroke-linejoin="round">
+  <g transform="translate(5 14)">
+    <path d="M12 58V27Q12 8 34 8t22 19v31Z" fill="#f7e5d2"/>
+    <path d="M8 27Q34 -2 62 27" fill="#d9a24d"/>
+    <path d="M19 35h30" fill="none"/><circle cx="26" cy="37" r="7" fill="#fff"/><circle cx="43" cy="37" r="7" fill="#fff"/>
+    <circle cx="27" cy="37" r="3.5" fill="#222"/><circle cx="44" cy="37" r="3.5" fill="#222"/>
+    <path d="M25 50q9 9 18 0" fill="none"/>
+    <path d="M15 58h39l-5 12H20Z" fill="#d9a24d"/>
+  </g>
+  <g transform="translate(57 0)">
+    <path d="M12 74V27Q12 5 45 5t33 22v47Z" fill="#161616"/>
+    <path d="M7 28Q45 -8 83 28" fill="#d9a24d"/>
+    <circle cx="29" cy="40" r="12" fill="#fff"/><circle cx="61" cy="40" r="12" fill="#fff"/>
+    <circle cx="30" cy="40" r="6" fill="#111"/><circle cx="60" cy="40" r="6" fill="#111"/>
+    <path d="M31 62q14 12 28 0" fill="none" stroke="#e5b64e" stroke-width="3"/>
+    <path d="M14 74h70l-7 13H21Z" fill="#d9a24d"/>
+  </g>
+  <g transform="translate(119 15)">
+    <path d="M8 57V28Q8 8 30 8t22 20v29Z" fill="#f6cf59"/>
+    <path d="M4 27Q30 -2 56 27" fill="#d9a24d"/>
+    <circle cx="22" cy="37" r="7" fill="#fff"/><circle cx="38" cy="37" r="7" fill="#fff"/>
+    <circle cx="22" cy="37" r="3.5" fill="#222"/><circle cx="38" cy="37" r="3.5" fill="#222"/>
+    <path d="M20 50q10 8 20 0" fill="none"/>
+    <path d="M11 57h38l-5 12H16Z" fill="#d9a24d"/>
+  </g>
+</g></svg>
