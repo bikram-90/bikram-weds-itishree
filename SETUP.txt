@@ -1,0 +1,24 @@
+ONE-TIME SETUP — WEDDING WEBSITE
+
+1) RSVP EMAIL DELIVERY
+The RSVP form creates a WhatsApp draft and sends the same RSVP text through FormSubmit.
+On its first live submission, FormSubmit asks the destination mailbox to confirm the form. Open the confirmation email and approve it. After that, future RSVPs are emailed automatically.
+
+The current receiver is bikramwedsitishree@yopmail.com. YOPmail documents that its inboxes have no password and can be opened by anyone who knows the inbox name. This is not a private inbox. Change RSVP_EMAIL near the RSVP JavaScript in index.html to a private email address before launch if guest details should remain confidential.
+
+2) VISITOR COUNTER
+The footer uses GoatCounter and is configured for the account code `bikramwedsitishree`.
+- Sign up: https://www.goatcounter.com/signup
+- Use account/site code `bikramwedsitishree` if available.
+- Set the site domain to bikram-90.github.io (or the full GitHub Pages URL if the form accepts it).
+- In Site settings, enable “Allow adding visitor counts on your website”.
+- Redeploy the website. The total visit count will then appear in the footer.
+If that account code is unavailable, change GOATCOUNTER_ENDPOINT in index.html to your assigned https://YOURCODE.goatcounter.com/count endpoint.
+
+3) MUSIC
+The YouTube embed attempts muted autoplay. Browsers generally block audible autoplay until a visitor interacts with the page, so tap “Tap to enable sound” to hear it. The “Open on YouTube” link is the fallback if an embed is unavailable.
+
+4) DEPLOYMENT
+Upload the contents of this folder to the root of the main branch in:
+https://github.com/bikram-90/bikram-weds-itishree
+Keep index.html and .nojekyll at the repository root. Pages should be configured for main / (root).

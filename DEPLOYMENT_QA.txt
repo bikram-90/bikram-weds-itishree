@@ -1,0 +1,19 @@
+DEPLOYMENT QA — 03 NOVEMBER 2026
+
+Passed locally:
+- HTML parsed successfully; no duplicate element IDs.
+- JavaScript syntax check passed with Node.js.
+- All local image, SVG, favicon and other asset references resolve within this package.
+- Four event cards use four distinct, event-specific image assets.
+- English is the initial rendered language; remaining visible Odia text is limited to the Odia language selector.
+- All user-facing copy, event dates, event details, venue labels, RSVP labels/options, family roles, music labels, visitor-counter label, and footer copy have English/Odia values.
+- Parentage uses separate line elements; no literal "<br>" text remains.
+- No visible email backup line or duplicate emailRsvp element remains.
+- The family phone cards use Piky Kumari Behera and Bikram Kumar Behera.
+- Seven Google Maps links and four Google Calendar links are present.
+
+External service checks not completed from the local package:
+- FormSubmit must be activated once from the destination mailbox after the first live RSVP.
+- YOPmail is a public, password-free inbox; use a private mailbox for confidential RSVP details.
+- GoatCounter requires a free site/account code and enabling visitor counts in settings.
+- YouTube availability and autoplay depend on the video remaining accessible and the visitor's browser/network. Audible autoplay is blocked by many browsers until the visitor interacts.

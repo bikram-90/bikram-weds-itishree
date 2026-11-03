@@ -1,0 +1,12 @@
+BHUBANESWAR TRANSPORT INFORMATION
+
+Airport: Biju Patnaik International Airport (BBI)
+Railway: Bhubaneswar Railway Station (BBS)
+Bus: Babasaheb Bhimrao Ambedkar Bus Terminal (BSABT), commonly called Baramunda ISBT.
+
+The page intentionally does not publish travel distances or journey times because these vary by route and traffic. Each card opens Google Maps for current directions.
+
+Reference sources:
+- Odisha Tourism, Bhubaneswar destination / How to Reach: https://odishatourism.gov.in/en/destinations/bhubaneswar
+- Odisha Tourism, How to Reach Odisha: https://odishatourism.gov.in/en/how-to-reach-odisha
+- Bhubaneswar public transport network (CRUT): https://cms.bhubaneswarone.in/uploadDocuments/content/MO_BUS_Full_Network_Final_English_2.pdf
